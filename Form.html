@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+   <h1>Registeration form</h1>
+    <table>
+        <tr>
+            <td>
+                User Id:
+            </td>
+            <td>
+                <input type="text" name="userID" minlength="5" maxlength="12" title="Required and must be length of 5 and 12" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" name="passWord" minlength="7" maxlength="12" pattern="[A-Za-z]+" title="Required and must be length of 7 and 12" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="name"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+                <input type="text" name="address" optional>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                City:
+             <td>
+                <select name="city" required>
+            
+                    <option name="Please select your country">please select country</option> 
+                    <option value="Pakistan">Pakistan</option> 
+                    <option value="Austrailia">Austrailia</option>
+                    <option value="America">America</option> 
+                    <option value="Canada">Canada</option>
+                   </select>
+             </td>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                Zip Code:
+            </td>
+            <td>
+                <input type="text" name="zipCode" title="Must be numeric only" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail:
+            </td>
+            <td>
+                <input type="email" name="email" title="Must be valid email"  placeholder="abc@gmail.com" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender
+            </td>
+            <td>
+                <input type="radio" name="gender" required>Male
+                <input type="radio" name="gender">Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Language
+            </td>
+            <td>
+                <input type="checkbox" name="language" required>English
+                <input type="checkbox" name="language" required>Non-Language
+            </td>
+        </tr>
+        <tr>
+           <td valign="top">About:</td>
+           <td>
+            <textarea name="message" cols="38" rows="6"></textarea>
+           </td>        
+        </tr>
+        <tr>
+            <td colspan="1" align="center"></td>
+            <td>
+                <input type="button" name="submit" value="submit" >
+            </td>
+        </tr>
+            
+    </table>
+    </form>
+</body>
+</html>
